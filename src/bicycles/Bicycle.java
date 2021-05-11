@@ -9,6 +9,7 @@ package bicycles;
     public void brake();
 
     public int currentSpeed();
+
     public int stop();
   }
 

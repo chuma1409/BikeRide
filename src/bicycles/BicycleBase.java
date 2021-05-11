@@ -3,7 +3,7 @@ package bicycles;
 abstract public class BicycleBase implements Bicycle{
 private int speed;
 protected void changeSpeed(int y){
-    speed = y;
+    speed += y;
     }
     @Override
     public void accelerate() {

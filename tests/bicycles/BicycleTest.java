@@ -1,6 +1,7 @@
 package bicycles.models;
 
-import bicycles.BikeRide;
+import bicycles.*;
+
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -8,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 
 
 public class BicycleTest {
-        @Test
+    @Test
     public void shouldAccelerate() {
         RoadBike bicycle = new RoadBike();
         bicycle.accelerate();
