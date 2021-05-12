@@ -1,16 +1,13 @@
 package bicycles;
 
-
-
-
  public interface Bicycle{
-    public void accelerate();
+    void accelerate();
 
-    public void brake();
+     void brake();
 
-    public int currentSpeed();
+     int currentSpeed();
 
-    public int stop();
+     int stop();
   }
 
 

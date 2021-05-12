@@ -9,6 +9,8 @@ import static org.junit.Assert.assertEquals;
 
 
 public class BicycleTest {
+
+
     @Test
     public void shouldAccelerate() {
         RoadBike bicycle = new RoadBike();
@@ -83,4 +85,41 @@ public class BicycleTest {
         assertEquals(1, bicycle.currentSpeed());
 
     }
+    @Test
+    public void tandemShouldAccelerate() {
+        Tandem bicycle = new Tandem();
+        bicycle.accelerate();
+        assertEquals(12, bicycle.currentSpeed());
+    }
+    @Test
+    public void tandemShouldDoMultipleAcceleratesCorrectly() {
+
+        Tandem bicycle = new Tandem();
+        bicycle.accelerate();
+        bicycle.accelerate();
+        bicycle.accelerate();
+        assertEquals(36, bicycle.currentSpeed());
+
+    }
+    @Test
+    public  void tandemShouldAccelerateAndBrakeCorrectMountain() {
+
+        Tandem bicycle = new Tandem();
+        bicycle.accelerate();
+        bicycle.brake();
+        assertEquals(5, bicycle.currentSpeed());
+
+    }
+    @Test
+    public void tanemShouldaccelerateAndStop() {
+
+        Tandem bicycle = new Tandem();
+        bicycle.accelerate();
+        bicycle.stop();
+        assertEquals(0, bicycle.currentSpeed());
+    }
+//    @Test
+//    public void bikeRideShouldAccelerate(){
+//
+//    }
 }
