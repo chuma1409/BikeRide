@@ -15,10 +15,12 @@ public class Tandem implements Bicycle{
     @Override
     public int currentSpeed() {
         return speed;
+
     }
 
     @Override
     public int stop() {
         return speed = 0;
+
     }
 }
