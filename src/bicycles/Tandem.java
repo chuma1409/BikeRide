@@ -23,4 +23,9 @@ public class Tandem implements Bicycle{
         return speed = 0;
 
     }
+
+    @Override
+    public BicycleType getBicycleType() {
+        return BicycleType.Tandem;
+    }
 }

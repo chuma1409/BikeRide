@@ -116,6 +116,7 @@ public class BicycleTest {
         Tandem bicycle = new Tandem();
         bicycle.accelerate();
         bicycle.stop();
+        System.out.println(bicycle.currentSpeed());
         assertEquals(0, bicycle.currentSpeed());
     }
     @Test
@@ -136,5 +137,40 @@ public class BicycleTest {
         assertEquals(3,mountainBikeSpec.getBrakeSpeed());
         assertEquals(BicycleType.MountainBike,mountainBikeSpec.getBicycleType());
     }
+    @Test
+    public void testFunrideTandemCounter(){
 
+       FunRide bicycle = new FunRide(3);
+       Tandem tandem = new Tandem();
+       bicycle.accept(tandem);
+        bicycle.accept(tandem);
+        bicycle.accept(tandem);
+        bicycle.accept(tandem);
+        System.out.println(bicycle.getCountForType(BicycleType.Tandem));
+       assertEquals(3,bicycle.getCountForType(BicycleType.Tandem));
+    }
+    @Test
+    public void testFunRideMountainBikeCounter(){
+
+        FunRide bicycle = new FunRide(5);
+        MountainBike mountainBike = new MountainBike();
+        bicycle.accept(mountainBike);
+        bicycle.accept(mountainBike);
+        bicycle.accept(mountainBike);
+        bicycle.accept(mountainBike);
+        System.out.println(bicycle.getCountForType(BicycleType.MountainBike));
+        assertEquals(4,bicycle.getCountForType(BicycleType.MountainBike));
+    }
+    @Test
+    public void testingAllBicycleCounter(){
+        FunRide bicycle = new FunRide(8);
+        MountainBike mountainBike = new MountainBike();
+        Tandem tandem = new Tandem();
+        bicycle.accept(mountainBike);
+        bicycle.accept(mountainBike);
+        bicycle.accept(mountainBike);
+        bicycle.accept(tandem);
+        System.out.println(bicycle.getEnteredCount());
+        assertEquals(4,bicycle.getEnteredCount());
+    }
 }

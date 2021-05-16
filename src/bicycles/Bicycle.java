@@ -8,7 +8,11 @@ package bicycles;
      int currentSpeed();
 
      int stop();
-  }
+
+  BicycleType getBicycleType();
+
+//  BicycleType getBicycleType();
+ }
 
 
 

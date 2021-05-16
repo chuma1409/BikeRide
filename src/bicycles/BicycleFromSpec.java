@@ -16,4 +16,8 @@ public BicycleFromSpec(bicycles.BicycleSpecification bicycleSpecification){
     }
 
 
+    @Override
+    public BicycleType getBicycleType() {
+        return this.BicycleSpecification.getBicycleType();
+    }
 }
