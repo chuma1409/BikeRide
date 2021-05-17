@@ -17,8 +17,11 @@ public class FunRide {
         if(counter < max){
             bicycleList.add(bicycle);
             counter++;
+        }else {
+            System.out.println("BicycleList has reached its maximum");
         }
-    }
+        }
+
     public int getCountForType(BicycleType bicycleType){
     //can tell how many bicycles are there for a specific type
        int specificCounter = 0;
