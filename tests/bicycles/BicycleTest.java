@@ -110,6 +110,7 @@ public class BicycleTest {
         assertEquals(5, bicycle.currentSpeed());
 
     }
+
     @Test
     public void tanemShouldaccelerateAndStop() {
 

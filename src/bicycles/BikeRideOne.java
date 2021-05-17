@@ -9,6 +9,7 @@ public class BikeRideOne implements BikeRide{
 
     }
 
+
     @Override
     public void ride(Bicycle bicycle) {
 

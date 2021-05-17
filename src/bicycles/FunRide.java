@@ -21,7 +21,7 @@ public class FunRide {
     }
     public int getCountForType(BicycleType bicycleType){
     //can tell how many bicycles are there for a specific type
-      int specificCounter = 0;
+       int specificCounter = 0;
       for (Bicycle bicycle : bicycleList){
           if(bicycleType == bicycle.getBicycleType()){
               specificCounter ++;
