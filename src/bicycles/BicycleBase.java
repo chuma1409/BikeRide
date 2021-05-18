@@ -22,7 +22,7 @@ protected void changeSpeed(int y){
 
     @Override
     public int stop() {
-        return 0;
+        return speed = 0;
     }
 
 }

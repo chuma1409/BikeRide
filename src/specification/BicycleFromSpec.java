@@ -1,10 +1,13 @@
-package bicycles;
+package specification;
+
+import bicycles.BicycleBase;
+import bicycles.BicycleType;
 
 public class BicycleFromSpec extends BicycleBase {
 
-    private final bicycles.BicycleSpecification BicycleSpecification;
+    private final specification.BicycleSpecification BicycleSpecification;
 
-public BicycleFromSpec(bicycles.BicycleSpecification bicycleSpecification){
+public BicycleFromSpec(specification.BicycleSpecification bicycleSpecification){
     this.BicycleSpecification = bicycleSpecification;
 }
    public void accelerationSpeed(){

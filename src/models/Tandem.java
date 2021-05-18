@@ -1,6 +1,9 @@
-package bicycles;
+package models;
 
-public class Tandem implements Bicycle{
+import bicycles.Bicycle;
+import bicycles.BicycleType;
+
+public class Tandem implements Bicycle {
     int speed;
     @Override
     public void accelerate() {

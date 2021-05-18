@@ -1,6 +1,9 @@
-package bicycles;
+package rides;
 
-public class BikeRideTwo implements BikeRide{
+import bicycles.Bicycle;
+import rides.BikeRide;
+
+public class BikeRideTwo implements BikeRide {
 
     public final Bicycle bicycle;
     public BikeRideTwo(Bicycle bicycle) {

@@ -1,7 +1,9 @@
-package bicycles;
+package specification;
+
+import bicycles.BicycleType;
 
 public class BicycleSpecification {
-    private  BicycleType bicycleType;
+    private BicycleType bicycleType;
     private int accelerationSpeed;
     private int brakeSpeed;
 

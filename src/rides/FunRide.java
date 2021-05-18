@@ -1,4 +1,7 @@
-package bicycles;
+package rides;
+
+import bicycles.Bicycle;
+import bicycles.BicycleType;
 
 import java.util.ArrayList;
 
@@ -34,7 +37,7 @@ public class FunRide {
         return specificCounter;
     }
     public int getEnteredCount(){
-       return counter;
+       return bicycleList.size();
     }
 
 }

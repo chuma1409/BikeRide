@@ -1,24 +1,24 @@
-package bicycles.models;
+package models;
 
 import bicycles.Bicycle;
 import bicycles.BicycleBase;
 import bicycles.BicycleType;
 
-class MountainBike extends BicycleBase {
+public class RoadBike extends BicycleBase {
 
     @Override
     public void accelerate() {
-        changeSpeed(5);
+       changeSpeed(11);
     }
 
     @Override
     public void brake() {
-        changeSpeed(-3);
+       changeSpeed(-4);
     }
 
     @Override
     public BicycleType getBicycleType() {
-        return BicycleType.MountainBike;
+        return BicycleType.RoadBike;
     }
 
 }
