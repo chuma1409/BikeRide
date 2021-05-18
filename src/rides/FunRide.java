@@ -17,11 +17,9 @@ public class FunRide {
     }
     public void accept(Bicycle bicycle){
         //accepts bicycles entering fun ride(adding to List) & incrementing the counter
-        if(counter < max){
+        if((counter < max) &&  !(bicycleList.contains(bicycle))){
             bicycleList.add(bicycle);
             counter++;
-        }else {
-            System.out.println("BicycleList has reached its maximum");
         }
         }
 

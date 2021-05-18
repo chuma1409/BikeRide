@@ -43,6 +43,7 @@ public class RideTest {
         MountainBike mountainBike3 = new MountainBike();
         Tandem tandem = new Tandem();
         bicycle.accept(mountainBike);
+        bicycle.accept(mountainBike);
         bicycle.accept(mountainBike2);
         bicycle.accept(mountainBike3);
         bicycle.accept(tandem);
