@@ -10,7 +10,7 @@ public class FunRide {
  public int max;
  public int counter;
 
- private final ArrayList<Bicycle> bicycleList= new ArrayList<>();
+ private ArrayList<Bicycle> bicycleList= new ArrayList<>();
     public FunRide(int max){
         //sets maximum amount of rides allowed
          this.max = max;
