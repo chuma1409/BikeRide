@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class FunRide {
  public int max;
- public int counter;
+
 
  private ArrayList<Bicycle> bicycleList= new ArrayList<>();
     public FunRide(int max){
@@ -17,7 +17,7 @@ public class FunRide {
     }
     public void accept(Bicycle bicycle){
         //accepts bicycles entering fun ride(adding to List) & incrementing the counter
-        if((counter < max) &&  !(bicycleList.contains(bicycle))){
+        if((bicycleList.size() < max) &&  !(bicycleList.contains(bicycle))){
             bicycleList.add(bicycle);
         }
         }
